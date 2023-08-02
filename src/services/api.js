@@ -4,7 +4,7 @@
 //     fetch('http://localhost:3000/votes').then(response => response.json())
 //   ]);
 // }
-const ENV = 'development';
+const ENV = 'production';
 const API_URL = ENV === 'production'
 ? 'https://movies-backend-api.onrender.com'
 : 'http://localhost:3000';
