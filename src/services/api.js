@@ -4,13 +4,17 @@
 //     fetch('http://localhost:3000/votes').then(response => response.json())
 //   ]);
 // }
+const ENV = 'development';
+const API_URL = ENV === 'production'
+? 'https://movies-backend-api.onrender.com'
+: 'http://localhost:3000';
 
 export async function getMoviesAndVotes() {
   const responses = await Promise.all([
     // fetch('http://localhost:3000/movies'),
     // fetch('http://localhost:3000/votes'),
-    fetch('https://movies-backend-api.onrender.com/movies'),
-    fetch('https://movies-backend-api.onrender.com/votes'),
+    fetch(`${API_URL}/movies`),
+    fetch(`${API_URL}/votes`),
   ]);
 
   const data = await Promise.all(
@@ -23,13 +27,10 @@ export async function getMoviesAndVotes() {
   return data;
 }
 
-// Função para incrementar a contagem de votos de um filme
 export async function vote(movieId, currentVoteCount) {
-  // Constrói a URL para a requisição
   // const url = `http://localhost:3000/votes/${movieId}`;
-  const url = `https://movies-backend-api.onrender.com/votes/${movieId}`;
+  const url = `${API_URL}/votes/${movieId}`;
 
-  // Define as opções para a requisição
   const options = {
     method: 'PATCH', // Método HTTP para atualizar parte dos recursos do servidor
     headers: {
@@ -40,10 +41,7 @@ export async function vote(movieId, currentVoteCount) {
     }),
   };
 
-  // Faz a requisição ao servidor
   const response = await fetch(url, options);
-  console.log(response);
-  // Converte a resposta do servidor em JSON e retorna
   return response.json();
 }
 
