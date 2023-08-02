@@ -6,7 +6,7 @@
 // }
 const ENV = 'production';
 const API_URL = ENV === 'production'
-? 'https://movies-backend-api.onrender.com'
+? 'https://fake-api-p03k.onrender.com'
 : 'http://localhost:3000';
 
 export async function getMoviesAndVotes() {
@@ -47,9 +47,3 @@ export async function vote(movieId, currentVoteCount) {
 
 
 
-export async function fetchPokemon(pokemonName) {
-  const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
-  const data = await response.json();
-  
-  console.count(data.name);
-}
