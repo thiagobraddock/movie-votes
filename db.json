@@ -1,0 +1,46 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "Interstellar",
+      "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/nCbkOyOMTEwlEV0LtCOvCnwEONA.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Inception",
+      "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/k3UoZhRHg6h2XYzwNAJJvGC2yev.jpg"
+    },
+    {
+      "id": 3,
+      "name": "The Matrix",
+      "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lDqMDI3xpbB9UQRyeXfei0MXhqb.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Robocop",
+      "image": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fR0lfsB7YRNy2NQo9Ii7CPnYp31.jpg"
+    }
+  ],
+  "votes": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "voteCount": 46
+    },
+    {
+      "id": 2,
+      "movieId": 2,
+      "voteCount": 61
+    },
+    {
+      "id": 3,
+      "movieId": 3,
+      "voteCount": 9
+    },
+    {
+      "id": 4,
+      "movieId": 4,
+      "voteCount": 0
+    }
+  ]
+}
