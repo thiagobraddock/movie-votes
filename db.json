@@ -25,17 +25,17 @@
     {
       "id": 1,
       "movieId": 1,
-      "voteCount": 57
+      "voteCount": 0
     },
     {
       "id": 2,
       "movieId": 2,
-      "voteCount": 77
+      "voteCount": 0
     },
     {
       "id": 3,
       "movieId": 3,
-      "voteCount": 13
+      "voteCount": 0
     },
     {
       "id": 4,
